@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:
+    "SF Pro Display", "inter", system-ui, "Segoe UI", Roboto, Oxygen, Ubuntu,
+    Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  user-select: none;
+}
+body {
+  padding: 0 170px;
+}
+html {
+  scroll-behavior: smooth !important;
+}
+
+/* Width of the scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Background of the scrollbar track */
+::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 6px;
+}
+
+/* The "Liquid" Gradient Handle */
+::-webkit-scrollbar-thumb {
+  background: #737373;
+  border-radius: 10px; /* Makes it rounded to look more fluid */
+  border: 3px solid #f0f0f0; /* Creates a gap between thumb and track for a cleaner look */
+  transition: background 0.3s ease;
+}
+
+/* Optional: Subtle hover effect */
+::-webkit-scrollbar-thumb:hover {
+  filter: brightness(
+    1.2
+  ); /* Makes the liquid look like it's glowing on hover */
+  cursor: pointer;
+}
+.logo {
+  display: flex;
+  font-size: 15px;
+  letter-spacing: 0.3px;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+}
+.logo img {
+  border-radius: 50px;
+  width: 30px;
+}
+.social-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #ffffff;
+  width: 140px;
+  height: 36px;
+  background: linear-gradient(
+    45deg,
+    #405de6,
+    #5851db,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #fd1d1d
+  );
+  padding: 0 16px;
+  border-radius: 16px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.social-cta:hover {
+  transform: scale(1.05); /* Thoda sa scale effect */
+  opacity: 0.9;
+}
+.social-cta img {
+  width: 20px;
+  filter: invert();
+}
+.social-cta:active {
+  transform: translateY(5px);
+}
+nav {
+  border-bottom: 1px solid #73737342;
+  background: rgba(255, 255, 255, 0.6);
+  position: fixed;
+  backdrop-filter: blur(15px);
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+.nav-container {
+  max-width: 80vw;
+  margin: 0 auto;
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+}
+.list-items ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  padding: 70px 0;
+  scroll-behavior: smooth;
+}
+.main-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.list-items ul li a {
+  color: #737373;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 16px;
+  padding: 5px 10px;
+  transition: 1s;
+  border-radius: 20px;
+}
+.list-items ul li a:hover {
+  color: black;
+  background-color: #e2e2e2;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+.main-container .hero-image img {
+  position: absolute;
+  width: 55rem;
+  height: 80vh;
+  top: 20px;
+  right: -73px;
+  z-index: -99;
+}
+.left-con-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 100px 0;
+}
+.main-heading {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 0.9;
+  margin-left: 5px;
+  margin: 10px 0;
+}
+
+.main-heading #name {
+  font-family: "Helvetica Neue";
+  font-style: italic;
+}
+.main-container .paragraph {
+  margin-top: 20px;
+  color: #737373;
+  width: 40rem;
+}
+.main-container .badge {
+  width: 40em;
+  display: flex;
+  align-items: center;
+}
+.scroll {
+  width: 100px;
+  margin-top: 200px;
+  filter: invert();
+  cursor: pointer;
+}
+.projects {
+  padding: 300px 0;
+  position: relative;
+  background: url(/assets/background-texture.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
