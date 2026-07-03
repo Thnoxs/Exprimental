@@ -14,32 +14,13 @@ html {
   scroll-behavior: smooth !important;
 }
 
-/* Width of the scrollbar */
 ::-webkit-scrollbar {
-  width: 12px;
+  display: none;
 }
-
-/* Background of the scrollbar track */
 ::-webkit-scrollbar-track {
-  background: #f0f0f0;
-  border-radius: 6px;
+  display: none;
 }
 
-/* The "Liquid" Gradient Handle */
-::-webkit-scrollbar-thumb {
-  background: #737373;
-  border-radius: 10px; /* Makes it rounded to look more fluid */
-  border: 3px solid #f0f0f0; /* Creates a gap between thumb and track for a cleaner look */
-  transition: background 0.3s ease;
-}
-
-/* Optional: Subtle hover effect */
-::-webkit-scrollbar-thumb:hover {
-  filter: brightness(
-    1.2
-  ); /* Makes the liquid look like it's glowing on hover */
-  cursor: pointer;
-}
 .logo {
   display: flex;
   font-size: 15px;
