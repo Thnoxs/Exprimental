@@ -185,7 +185,7 @@ main {
   justify-content: space-evenly;
   align-items: center;
   margin-bottom: 10px;
-  border: 10px solid #833ab4;
+  border: 1px solid #833ab4;
   box-shadow: 0px 0px 10px #e3e7faa0;
 }
 
