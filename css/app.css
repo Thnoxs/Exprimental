@@ -162,9 +162,59 @@ main {
   cursor: pointer;
 }
 .projects {
-  padding: 300px 0;
   position: relative;
   background: url(/assets/background-texture.svg);
   background-position: center;
   background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.project-box {
+  width: 60vw;
+  height: 600px;
+  background-color: #e3e7faa0;
+  backdrop-filter: blur(5px);
+}
+
+.project-tab-list {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 10px;
+  border: 10px solid #833ab4;
+  box-shadow: 0px 0px 10px #e3e7faa0;
+}
+
+.active {
+  padding: 5px 40px;
+  background-color: #061b6c;
+  box-shadow: 1px 1px 0px #0000004f;
+  border-radius: 20px;
+}
+.active a {
+  color: #e3e7fa;
+}
+
+@keyframes key {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(5.5);
+  }
+}
+.project-tab-list li {
+  padding: 5px 40px;
+}
+.full-box-container {
+  display: flex;
+  flex-direction: column;
+}
+.project-tab-list li a {
+  letter-spacing: 1px;
+  font-weight: 600;
 }
