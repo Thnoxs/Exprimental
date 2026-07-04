@@ -1,7 +1,7 @@
 const tabs = document.querySelectorAll(".project-tab-list li");
 const box = document.querySelector(".project-box");
 const click = new Audio("/assets/Click_main-01.wav");
-
+const navText = document.querySelectorAll(".list-items ul li a");
 const imageUrls = [
   "url(/assets/Gallery/image-1.jpg)",
   "url(/assets/Gallery/image-2.jpg)",
@@ -32,3 +32,7 @@ tabs.forEach((tab, index) => {
 
 // Set default state on page load (Project 1)
 setActiveTab(0);
+navText.forEach((text) => {
+  text.addEventListener("click", function () {
+  });
+});
