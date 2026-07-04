@@ -88,6 +88,7 @@ nav {
 }
 
 .nav-container {
+  max-width: 90vw;
   width: 100%;
   margin: 0 auto;
   padding: 15px 0;
@@ -184,10 +185,10 @@ main {
 }
 
 .full-box-container {
-  width: 60vw;
+  width: 90vw;
   height: 100vh;
-  margin: 0 auto;
   display: flex;
+  margin: 0 auto;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -203,15 +204,20 @@ main {
   border-radius: 10px;
   box-shadow: 0px 0px 10px #e3e7faa0;
   width: 100%;
+  margin-bottom: 20px;
 }
 
 .project-tab-list li {
-  padding: 10px 15px;
+  padding: 2px 10px;
   text-align: center;
   margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .project-tab-list li a {
+  font-size: 12px;
   letter-spacing: 1px;
   font-weight: 600;
   text-decoration: none;
@@ -229,22 +235,21 @@ main {
     #fd1d1d
   );
   box-shadow: 1px 1px 0px #0000004f;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 .project-tab-list li.active a {
   color: white !important;
 }
 .project-box {
   width: 100%;
-  height: 300px; /* Smaller box for mobile */
+  height: 600px; /* Smaller box for mobile */
   background-color: #e3e7faa0;
   backdrop-filter: blur(5px);
   border-radius: 10px;
   background-size: cover;
   background-position: center;
 }
-.project-tab-list li a:hover {
-}
+
 /* -----------------------------------
    DESKTOP STYLES (Min-width: 1024px)
 ----------------------------------- */
@@ -341,5 +346,14 @@ main {
     width: 60vw;
     height: 600px;
     border-radius: 0 0 10px 10px;
+  }
+  .full-box-container {
+    width: 60vw;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
